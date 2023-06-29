@@ -25,7 +25,7 @@ let repeatedString = '';
   used to count the number of times the string has been repeated
 */
 let i = 0;
-while (i < 4) {
+while (i < totalRepetitions) {
   repeatedString += toRepeat;
   console.log(repeatedString);
 

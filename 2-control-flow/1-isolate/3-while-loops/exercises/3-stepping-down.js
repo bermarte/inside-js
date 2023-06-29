@@ -17,7 +17,7 @@ console.log('-- begin --');
 */
 
 const holiday = 'winter solstice';
-const message = ' days remaining until ' + holiday;
+const message = ` days remaining until ${holiday}`;
 
 /* declare and assign the stepper variable
   this stepper is used to count down the days to a holiday
@@ -27,10 +27,10 @@ while (daysRemaining > 0) {
   const tweet = daysRemaining + message;
   console.log(tweet);
 
-  daysRemaining = daysRemaining -1;
+  daysRemaining -= 1;
 }
 
-const finalTweet = 'today is ' + holiday + '!';
+const finalTweet = `today is ${holiday}!`;
 console.log(finalTweet);
 
 console.assert(daysRemaining === 0, 'there are 0 days remaining');
