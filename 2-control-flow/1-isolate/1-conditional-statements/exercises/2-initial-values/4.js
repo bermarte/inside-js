@@ -8,15 +8,18 @@ console.log('-- begin --');
 //  what do all solutions to the same path have in common?
 // or maybe there are unreachable paths!
 
-const value1 = _;
-const value2 = _;
+const value1 = false;
+const value2 = 1;
+
 let path = '';
 
 if (value1 === value2) {
   path = 'if';
-} else if (!value1 === !value2) {
+} 
+else if (!value1 === !value2) {
   path = 'else if 1';
-} else if (Number(value2) === Number(value1)) {
+} 
+else if (Number(value2) === Number(value1)) {
   path = 'else if 2';
 } else if (!(value1 || value2)) {
   path = 'else if 3';
@@ -27,3 +30,6 @@ if (value1 === value2) {
 console.log(path);
 
 console.log('-- end --');
+
+// 'else if 2' is unreachable because of !value1 === !value2 and value1 === value2
+// and the rest as well for the previous ones, except 'else'

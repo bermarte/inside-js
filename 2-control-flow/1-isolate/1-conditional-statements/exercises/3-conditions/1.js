@@ -10,11 +10,25 @@ console.log('-- begin --');
 //  try to find as many as you can
 //  what do these solutions have in common?
 
-const value1 = 'hello';
-const value2 = false;
+let value1 = 'hello';
+let value2 = false;
 let path = '';
 
-if (_) {
+if (path !== '') {
+  path = 'if';
+} else {
+  path = 'else';
+}
+
+console.assert(path === 'else', 'path should be "else"');
+
+console.log('-- end --');
+
+value1 = 'hello';
+value2 = false;
+path = '';
+
+if (value1 === value2) {
   path = 'if';
 } else {
   path = 'else';

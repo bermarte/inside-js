@@ -1,9 +1,11 @@
 'use strict';
 
+console.log('-- begin --');
+
 // experiment with different values
-const a = _;
-const b = _;
-const c = _;
+const a = 0;
+const b = 0;
+const c = 1;
 
 // ternary expression
 const ternaryValue = a ? b : c;
@@ -17,3 +19,4 @@ if (Boolean(a) === true) {
 }
 
 console.assert(ternaryValue === conditionalValue, 'always the same!');
+console.log('-- end --');

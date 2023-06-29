@@ -10,13 +10,13 @@ console.log('-- begin --');
 //  try to find as many as you can
 //  what do these solutions have in common?
 
-const value1 = '';
-const value2 = -1;
+let value1 = '';
+let value2 = -1;
 let path = '';
 
-if (_) {
+if (!Number(value1) && !Boolean(value1)) {
   path = 'if';
-} else if (_) {
+} else if (value + value2 === 1) {
   path = 'else if';
 } else {
   path = 'else';
@@ -25,3 +25,39 @@ if (_) {
 console.assert(path === 'if', 'path should be "if"');
 
 console.log('-- end --');
+
+value1 = '';
+value2 = -1;
+path = '';
+
+if (!!value1 || value2) {
+  path = 'if';
+} else if (true) {
+  path = 'else if';
+} else {
+  path = 'else'; //never executed
+}
+
+console.assert(path === 'if', 'path should be "if"');
+
+console.log('-- end --');
+
+// Number(value1)- value2
+
+value1 = '';
+value2 = -1;
+path = '';
+
+if (Number(value1) - value2 > 0) {
+  path = 'if';
+} else if (false) {
+  path = 'else if'; // never executed
+} else {
+  path = 'else';
+}
+
+console.assert(path === 'if', 'path should be "if"');
+
+console.log('-- end --');
+
+// in all the solutions, if the first if is true, the following else-if and else are never executed
